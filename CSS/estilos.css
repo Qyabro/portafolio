@@ -1,0 +1,825 @@
+body{
+	font-family: arial;
+}
+
+.menu{
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 13.6%;
+	z-index: 1;
+}
+
+.borde-menu-green{
+	background-color: green;
+	width: 60%;
+	height: 5px;
+	position: absolute;
+	top: 0px;
+	left: 0%;
+}
+.borde-menu-amarillo{
+	background-color: yellow;
+	width: 10%;
+	height: 5px;
+	position: absolute;
+	top: 0px;
+	left: 60%;
+}
+.borde-menu-rojo{
+	background-color: red;
+	width: 30%;
+	height: 5px;
+	position: absolute;
+	top: 0px;
+	left: 70%;
+}
+
+.menu-principal{
+	background-color: white;
+	font-size: 22px;
+	position: relative;
+	top: -12px;
+	left: 30px;
+	width: 95%;
+	border-bottom: 5px #E0E3E3 solid;
+}
+
+nav a:hover{
+	animation-name: background-menu;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;	
+}
+
+@keyframes background-menu{
+	100%{
+		background-color: #E0E3E3;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+
+nav a{
+	padding: 15px;
+	margin: -10px;
+}
+
+ul{
+	display: flex; /*para poder poner los elementos horizontalmente */
+	justify-content: space-between;
+	width: 900px; 
+	list-style: none; /*quita los puntos de la lista*/
+}
+
+li{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.menu a{
+	color:  #39393A;
+	font-family: "EONBrixSans", Arial, Geneva, Helvetica, sans-serif;
+	text-decoration: none; /*para que los lins no esten subrayados*/
+}
+
+.menu-language{
+	width: 30px;
+	position: absolute;
+	top: 25px;
+	right: 16%;
+}
+
+.menu-logo{
+	width: 140px;
+	position: absolute;
+	top: 20px;
+	right: 3.5%;
+}
+
+
+.hero{
+	background-color: green;
+	position: relative;
+	top: 80px;
+	left: -8px;
+	z-index: 0;
+	height: 800px;
+	width: 100.85%;
+}
+
+.hero-slider-picture{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.hero-slider-picture img{
+	position: absolute;SS
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+.hero h1{
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	font-size: 300%;
+	color: white;
+	z-index: 1;
+}
+
+.hero-slider a{
+	position: absolute;
+	top: 80%;
+	left: 70%;
+	z-index: 1;
+	font-size: 20px;	
+	background-color: red;
+	color: white;
+	text-decoration: none; /*para que los lins no esten subrayados*/
+	padding: 12px;
+	border-radius: 15%;
+}
+
+h3{
+	color:  #EA1B0A;
+	font-size: 75px;
+	font-weight: 900;
+	text-align: right;
+	line-height: 40px;
+	font-family: EONBrixSans, Arial, Geneva, Helvetica, sans-serif;
+	padding-right: 40px;
+}
+
+.ceo{
+	position: relative;
+	top:  200px;
+	width: 100%;
+	background-color: #f2f2f2;  
+}
+
+.ceo-principal{
+	position: relative;
+	padding: 10px;
+	width: 98.5%;
+	margin: auto;
+}
+
+.ceo-figure{
+	display: flex;
+}
+
+.ceo-figure h4{
+	color: #39393A;
+	font-size: 50px;
+	font-family: EONBrixSans, Arial, Geneva, Helvetica, sans-serif;
+	padding-right: 20px;
+}
+
+.ceo-figure a{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.customers{
+	position: relative;
+	top:  350px;
+	width: 100%; 
+	height: 1200px;
+}
+
+.customers h4{
+	color: #FFF;
+	font-size: 45px;
+	
+	z-index: 1;	
+}
+
+.customers h5{
+	color: #FFF;
+	font-size: 20px;	
+	z-index: 1;	
+}
+
+.customers-figure1{
+	/*display: flex; /*para poder poner los elementos horizontalmente */
+	/*justify-content: space-between;*/
+	width: 100%; 
+	position: relative;
+
+}
+
+.customers-figure2{
+	/*display: flex; 
+	justify-content: space-between;*/
+	width: 100%; 
+	position: relative;
+
+}
+
+.customers-figure1-figure-baby{
+	position: relative;
+}
+.customers-figure1-figure-baby-picture{
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	z-index: 0;
+}
+.customers-figure1-figure-baby-text h4{
+	position: absolute;
+	top: 250px;
+	left: 2%;
+	z-index: 1;
+}
+
+.customers-figure1-figure-baby-text h5{
+	position: absolute;
+	top: 390px;
+	left: 2%;
+	z-index: 1;
+}
+
+.customers-figure1-figure-men{
+	position: relative;
+}
+.customers-figure1-figure-men-picture{
+	position: absolute;
+	top: 10px;
+	left: 34%;
+	z-index: 0;
+}
+.customers-figure1-figure-men-text h4{
+	position: absolute;
+	top: 250px;
+	left: 36%;
+	z-index: 1;
+}
+
+.customers-figure1-figure-men-text h5{
+	position: absolute;
+	top: 390px;
+	left: 36%;
+	z-index: 1;
+}
+
+.customers-figure1-figure-map{
+	position: relative;
+}
+.customers-figure1-figure-map-picture{
+	position: absolute;
+	top: 10px;
+	left: 68%;
+	z-index: 0;
+}
+.customers-figure1-figure-map-text h4{
+	position: absolute;
+	top: 250px;
+	left: 70%;
+	z-index: 1;
+}
+
+.customers-figure1-figure-map-text h5{
+	position: absolute;
+	top: 390px;
+	left: 70%;
+	z-index: 1;
+}
+
+
+.customers-figure2-figure-origami{
+	position: relative;
+}
+.customers-figure2-figure-origami-picture{
+	position: absolute;
+	top: 550px;
+	left: 0%;
+	z-index: 0;
+}
+.customers-figure2-figure-origami-text h4{
+	position: absolute;
+	top: 710px;
+	left: 2%;
+	z-index: 1;
+}
+.customers-figure2-figure-origami-text h5{
+	position: absolute;
+	top: 810px;
+	left: 2%;
+	z-index: 1;
+}
+
+
+.customers-figure2-figure-town{
+	position: relative;
+}
+.customers-figure2-figure-town-picture{
+	position: absolute;
+	top: 550px;
+	left: 50%;
+	z-index: 0;
+}
+.customers-figure2-figure-town-text h4{
+	position: absolute;
+	top: 710px;
+	left: 52%;
+	z-index: 1;
+}
+.customers-figure2-figure-town-text h5{
+	position: absolute;
+	top: 810px;
+	left: 52%;
+	z-index: 1;
+}
+/*
+.customers-bebe{
+	height: 400px;
+	width: 400px;
+	background-image: url('../images/baby_kitchen.jpeg');
+	background-size: 400px 400px;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 40px ;
+}
+
+.customers-bebe:hover{
+	height: 400px;
+	width: 400px;
+	background-color: red;
+	background-image: none;
+	background-size: 400px 400px;
+
+}
+
+*/
+
+/*=======================================================*/
+
+.projects{
+	position: relative;
+	top:  350px;
+	width: 100%; 
+	height: 1200px;
+	background-color: #f2f2f2;
+}
+
+.projects h4{
+	color: #FFF;
+	font-size: 45px;	
+	z-index: 1;	
+}
+
+.projects h5{
+	color: #FFF;
+	font-size: 20px;	
+	z-index: 1;	
+}
+
+.projects-figure1{
+	/*display: flex; /*para poder poner los elementos horizontalmente */
+	/*justify-content: space-between;*/
+	width: 100%; 
+	position: relative;
+
+}
+
+.projects-figure2{
+	/*display: flex; 
+	justify-content: space-between;*/
+	width: 100%; 
+	position: relative;
+
+}
+
+.projects-figure1-figure-men{
+	position: relative;
+}
+.projects-figure1-figure-men-picture{
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	z-index: 0;
+}
+.projects-figure1-figure-men-text h4{
+	position: absolute;
+	top: 250px;
+	left: 2%;
+	z-index: 1;
+}
+
+.projects-figure1-figure-men-text h5{
+	position: absolute;
+	top: 390px;
+	left: 2%;
+	z-index: 1;
+}
+
+.projects-figure1-figure-llantas{
+	position: relative;
+}
+.projects-figure1-figure-llantas-picture{
+	position: absolute;
+	top: 10px;
+	left: 34%;
+	z-index: 0;
+}
+.projects-figure1-figure-llantas-text h4{
+	position: absolute;
+	top: 250px;
+	left: 36%;
+	z-index: 1;
+}
+
+.projects-figure1-figure-llantas-text h5{
+	position: absolute;
+	top: 390px;
+	left: 36%;
+	z-index: 1;
+}
+
+.projects-figure1-figure-tunel{
+	position: relative;
+}
+.projects-figure1-figure-tunel-picture{
+	position: absolute;
+	top: 10px;
+	left: 68%;
+	z-index: 0;
+}
+.projects-figure1-figure-tunel-text h4{
+	position: absolute;
+	top: 250px;
+	left: 70%;
+	z-index: 1;
+}
+
+.projects-figure1-figure-tunel-text h5{
+	position: absolute;
+	top: 390px;
+	left: 70%;
+	z-index: 1;
+}
+
+
+.projects-figure2-figure-medallas{
+	position: relative;
+}
+.projects-figure2-figure-medallas-picture{
+	position: absolute;
+	top: 550px;
+	left: 0%;
+	z-index: 0;
+}
+.projects-figure2-figure-medallas-text h4{
+	position: absolute;
+	top: 710px;
+	left: 2%;
+	z-index: 1;
+}
+.projects-figure2-figure-medallas-text h5{
+	position: absolute;
+	top: 810px;
+	left: 2%;
+	z-index: 1;
+}
+
+
+.projects-figure2-figure-burbujas{
+	position: relative;
+}
+.projects-figure2-figure-burbujas-picture{
+	position: absolute;
+	top: 550px;
+	left: 50%;
+	z-index: 0;
+}
+.projects-figure2-figure-burbujas-text h4{
+	position: absolute;
+	top: 710px;
+	left: 52%;
+	z-index: 1;
+}
+.projects-figure2-figure-burbujas-text h5{
+	position: absolute;
+	top: 810px;
+	left: 52%;
+	z-index: 1;
+}
+
+/*=======================================================*/
+
+.jobs{
+	position: relative;
+	top:  500px;
+}
+
+.jobs-figure{
+	position: relative;
+}
+
+.jobs-figure-picture{
+	position: absolute;
+	top: 10px;
+	left: 2px;
+}
+
+.jobs-figure-picture-text{
+	position: absolute;
+	top: 10px;
+	left: 850px;
+	background-color: #1AABAF;
+}
+
+.jobs-figure-picture-text h4{
+	font-size: 60px;
+	color:  white;
+	padding-left: 40px;
+}
+.jobs-figure-picture-text p{
+	font-size: 30px;
+	color:  white;
+	padding-left: 40px;
+}
+.jobs-figure-picture-text a{
+	font-size: 20px;
+	color:  white;
+	padding-left: 40px;
+}
+
+/*=======================================================*/
+.network{
+	position: relative;
+	top:  1300px;
+}
+
+.network-figure{
+	position: relative;
+	background-color: #f2f2f2;
+}
+
+.network-figure-picture{
+	position: absolute;
+	top: 10px;
+	left: 2px;
+}
+
+.network-figure-picture-text{
+	position: absolute;
+	top: 10px;
+	left: 652px;
+	background-color: #DCDE12;
+	padding-bottom: 40px;
+}
+
+.network-figure-picture-text h4{
+	font-size: 60px;
+	color: red;
+	padding-left: 40px;
+}
+.network-figure-picture-text a{
+	font-size: 25px;
+	color: red;
+	padding-left: 40px;	
+}
+
+
+/*=======================================================*/
+.investors{
+	position: relative;
+	top:  2100px;
+}
+.investors-picture-pantallas{
+	position: absolute;
+	top: 200px;
+	left: 20px;
+}
+
+.investors-text{
+	position: absolute;
+	color: white;
+	width: 800px;
+}
+
+.investors-text h4{
+	position: absolute;
+	font-size: 45px;
+	top: 400px;
+	left: 60px;
+}
+
+.investors-text h5{
+	position: absolute;
+	font-size: 25px;
+	top: 500px;
+	left: 60px;
+}
+
+.investors-picture-curvas{
+	position: absolute;
+	top: 200px;
+	left: 1150px;
+}
+
+
+/*=======================================================*/
+.news{
+	position: relative;
+	top:  2900px;
+	background-color:#f2f2f2;
+	height: 600px;
+}
+
+.news-figure1{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	width: 700px;
+}
+
+.news-figure1 h4{
+	position: absolute;
+	color: black;
+	font-size: 50px;
+	top: 0px;
+}
+
+.news-figure1 h6{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	top: 70px;
+	font-weight: normal;
+}
+.news-figure1 h5{
+	position: absolute;
+	color: red;
+	font-size: 50px;
+	top: 75px;
+}
+.news-figure1 p{
+	position: absolute;
+	color: black;
+	font-size: 25px;
+	top: 280px;
+}
+.news-figure1 a{
+	position: absolute;
+	color: red;
+	font-size: 20px;
+	top: 400px;
+	font-weight: bold;
+}
+
+
+.news-figure2{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 1300px;
+}
+.news-figure2 h4{
+	position: absolute;
+	color: black;
+	font-size: 50px;
+	top: 0px;
+	left: 700px;
+}
+
+.news-figure2 h6{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	top: 70px;
+	font-weight: normal;
+	left: 700px;
+}
+.news-figure2 h5{
+	position: absolute;
+	color: red;
+	font-size: 50px;
+	top: 75px;
+	left: 700px;
+}
+.news-figure2 p{
+	position: absolute;
+	color: black;
+	font-size: 25px;
+	top: 280px;
+	left: 700px;
+}
+.news-figure2 a{
+	position: absolute;
+	color: red;
+	font-size: 20px;
+	top: 400px;
+	font-weight: bold;
+	left: 700px;
+}
+
+
+
+
+/*=======================================================*/
+.values{
+	position: relative;
+	top:  3000px;
+}
+
+.values-figure{
+	position: relative;
+	top: 100px;
+	left: 2px;
+	width: 700px;
+}
+
+.values-figure1{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+.values-figure1 h3{
+	position: absolute;
+	top: 280px;
+	left: 15px;
+	color:  white;
+	font-size: 45px;
+	z-index: 2;
+}
+
+.values-figure1 h4{
+	position: absolute;
+	top: 370px;
+	left: 15px;
+	color:  white;
+	font-size: 20px;
+	z-index: 2;
+}
+
+.values-figure2{
+	position: absolute;
+	top: 10px;
+	left: 500px;
+}
+.values-figure2 h3{
+	position: absolute;
+	top: 280px;
+	left: 15px;
+	color:  white;
+	font-size: 45px;
+	z-index: 2;
+}
+
+.values-figure2 h4{
+	position: absolute;
+	top: 370px;
+	left: 15px;
+	color:  white;
+	font-size: 20px;
+	z-index: 2;
+}
+
+
+.values-figure3{
+	position: absolute;
+	top: 10px;
+	left: 1000px;
+}
+
+.values-figure3 h3{
+	position: absolute;
+	top: 250px;
+	left: 15px;
+	color:  white;
+	font-size: 35px;
+	z-index: 2;
+	width: 800px;
+	text-align: left;
+}
+
+.values-figure3 h4{
+	position: absolute;
+	top: 370px;
+	left: 15px;
+	color:  white;
+	font-size: 20px;
+	z-index: 2;
+}
+
+/*=======================================================*/
+.footer{
+	position: relative;
+	border: 2px solid pink;
+	top:  3600px;
+}
+
+
